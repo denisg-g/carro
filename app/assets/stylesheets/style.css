@@ -88,7 +88,7 @@ ul.nav{
 }
 /*banner area*/
 .banner{
-	background: url('banner.jpg');
+	background: image-url('banner.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -197,7 +197,7 @@ ul.nav{
 .service{
 	margin: 0;
 	padding: 0;
-	background: url(typing-bg.jpg);
+	background: image-url(typing-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
