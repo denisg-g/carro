@@ -10,14 +10,25 @@
 *
 *****/
 @font-face {
-    font-family: 'HDVPeace';
-    src: url('/assets/HDV_Peace.eot');
-    src: url('/assets/HDV_Peace.eot?iefix') format('eot'),
-         url('/assets/HDV_Peace.woff') format('woff'),
-         url('/assets/HDV_Peace.ttf') format('truetype'),
-         url('/assets/HDV_Peace.svg#webfont') format('svg');
+   font-family: 'fontawesome';
+    src: url('fontawesome-webfont.eot');
+    src: url('fontawesome-webfont.svg#fontawesome') format('svg'), 
+         url('fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fontawesome-webfont.woff') format('woff'),
+         url('fontawesome-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-
+.div-ban{
+	margin:0 auto;
+  	width: 70%;
+}
+.texto-ban{
+	color:#fff;
+	padding:.5em .8em;
+  	text-shadow:0 2px 3px rgba(0,0,0,0.4);
+  	opacity: 1;
+}
 body{
 	margin: 0;
 	padding: 0;
@@ -88,7 +99,7 @@ ul.nav{
 }
 /*banner area*/
 .banner{
-	background: url('banner.jpg');
+	background: url('banner1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -517,21 +528,3 @@ responsive area
 		padding: 0px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
