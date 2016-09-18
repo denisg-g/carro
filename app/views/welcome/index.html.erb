@@ -1,258 +1,290 @@
-<!-- banner area starts here -->
-    <section class="banner text-center" id="sec1">
+
+<div id="fullpage">
+    <div class="section" id="section1">
         <div class="container">
+            <%= image_tag "logo1.jpg",:style => "width:20%;margin-top:210px;",:class=>"" %>
             <div class="row">
-                <div class="div-ban">
-                    <h3 class="texto-ban">Los mejores productos</h3>
-                </div>  
-                <div class="div-ban">
-                    <h1 class="texto-ban">autopartes ebenezer</h1>
-                </div>  
-                <div class="div-ban">
-                    <p class="texto-ban">los expertos en autopartes</p>
-                </div>  
+                <h3>Los mejores productos</h3>
+                <h1>autopartes ebenezer</h1>
+                <p>los expertos en autopartes</p> 
                 <%= image_tag "pin.png",:style => "",:class=>"" %>
                 <br>
-
                 <button class="know-more">KNOW MORE</button>
             </div>
         </div>
-    </section>
-    <!-- end of banner section -->
-    <!-- about section -->
-    <section class="about text-center" id="sec2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 about-heading">
-                    <h2>
-						Acerca 
-					</h2>
-                    <%= image_tag "daag.png",:style => "",:class=>"" %>
+    </div>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span>quis nostrud exercitation ullamco</span> laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
-                </div>
-
-                <div class="col-md-3 single-about col-xs-6 col-sm-4">
-                    <div class="about-inside">
-                        <i class="fa fa-lightbulb-o"></i>
-                        <h3><header></header></h3>
-                        <p>onsectetur adipisicaing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 single-about col-xs-6 col-sm-4">
-                    <div class="about-inside">
-                        <i class="fa fa-pencil"></i>
-                        <h3>Title goes here</h3>
-                        <p>onsectetur adipisicaing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 single-about col-xs-6 col-sm-4">
-                    <div class="about-inside">
-                        <i class="fa fa-cog"></i>
-                        <h3>Title goes here</h3>
-                        <p>onsectetur adipisicaing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 single-about col-xs-6 col-sm-4">
-                    <div class="about-inside">
-                        <i class="fa fa-laptop"></i>
-                        <h3>Title goes here</h3>
-                        <p>onsectetur adipisicaing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of about section -->
-
-    <!-- service section -->
-
-    <section class="service text-left" id="sec3">
-        <div class="container">
-            <div class="row">
-                <div class="service-overlay"></div>
-                <div class="col-md-12">
-                    <h2>Servicios</h2>
-                    <%= image_tag "daag.png",:style => "",:class=>"" %>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    <div class="section">
+        <section class="portfolio text-center" id="sec4">
+            <div class="row portfolio-row">
+                <div class="portfolio-heading">
+                    <h2>PRODUCTOS</h2>
+                    <%= image_tag "daag.png",:style => "",:class=>"img-responsive",:style=>"display:initial;" %>
+                    <p>Con las mejores marcas en el mercado estamos para servirles 
                         <br>
-                        <br> tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <br>Siempre a su disposición</p>
                 </div>
-                <div class="col-md-12 services">
-                    <div class="col-md-2 single-service col-xs-6 col-sm-3">
-                        <i class="fa fa-tachometer"></i>
-                        <h3>Title goes here</h3>
-                        <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
-                    </div>
 
-                    <div class="col-md-2 col-md-push-1 single-service col-xs-6 col-sm-3">
+                <div class="col-md-3 single-portfolio col-sm-6">
+                    <figure class="portfolio-item">
+                        <%= image_tag "amortiguador.jpg",:style => "",:rel=>"" %>
+                        <figcaption class="portfolio-details">
+                            <h4>Amortiguadores</h4>
+                            <p>Kygo la mejor marca para sus vehiculos: hyndai, toyota, nissan</p>
+                        </figcaption>
+                    </figure>
+                    <%= link_to url_to_image("amortiguador.jpg"),:title=>"Amortiguadores", :style=>"width 90%;",:class => 'group1' do %>
                         <i class="fa fa-search"></i>
-                        <h3>Title goes here</h3>
-                        <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
-                    </div>
+                    <% end %>   
                 </div>
 
-                <div class="col-md-12  services bottom-services">
+                <div class="col-md-3 single-portfolio col-sm-6">
+                    <figure class="portfolio-item">
+                        <%= image_tag "banda.jpg",:style => "",:class=>"img-responsive"  %>
+                        <figcaption class="portfolio-details">
+                            <h4>Bandas kygo</h4>
+                            <p>Kygo la mejor marca para sus vehiculos: hyndai, toyota, nissan</p>
+                        </figcaption>
+                    </figure>
+                    <%= link_to url_to_image("banda.jpg"), :title=>"Bandas",:style=>"width 90%;",:class => 'group1' do %>
+                        <i class="fa fa-search"></i>
+                    <% end %>
+                </div>
 
-                    <div class="col-md-2 single-service col-sm-3 col-xs-6">
-                        <i class="fa fa-stack-overflow"></i>
-                        <h3>Title goes here</h3>
-                        <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
-                    </div>
+                <div class="col-md-3 single-portfolio col-sm-6">
+                    <figure class="portfolio-item">
+                        <%= image_tag "bujias.jpg",:style => "",:class=>"img-responsive" %>
+                        <figcaption class="portfolio-details">
+                            <h4>Chisperos</h4>
+                            <p>Kygo la mejor marca para sus vehiculos: hyndai, toyota, nissan</p>
+                        </figcaption>
+                    </figure>
+                   <%= link_to url_to_image("bujias.jpg"),:title=>"Chisperos", :style=>"width 90%;",:class => 'group1' do %>
+                        <i class="fa fa-search"></i>
+                    <% end %>
+                 </div>
 
-                    <div class="col-md-2 col-md-push-1 single-service col-sm-3 col-xs-6">
-                        <i class="fa fa-bar-chart"></i>
-                        <h3>Title goes here</h3>
-                        <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
-                    </div>
+                <div class="col-md-3 single-portfolio col-sm-6">
+                    <figure class="portfolio-item">
+                        <%= image_tag "llanta.jpg",:style => "",:class=>"img-responsive" %>
+                        <figcaption class="portfolio-details">
+                            <h4>Llantas</h4>
+                            <p>Kygo la mejor marca para sus vehiculos: hyndai, toyota, nissan</p>
+                        </figcaption>
+                    </figure>
+                  <%= link_to url_to_image("llanta.jpg"),:title=>"Llantas", :style=>"width 90%;",:class => 'group1' do %>
+                        <i class="fa fa-search"></i>
+                    <% end %>
+                </div>
+
+                <div class="col-md-3 single-portfolio col-sm-6">
+                    <figure class="portfolio-item">
+                        <%= image_tag "freno.jpg",:style => "",:class=>"img-responsive" %>
+                        <figcaption class="portfolio-details">
+                            <h4>Discos de freno</h4>
+                            <p>Kygo la mejor marca para sus vehiculos: hyndai, toyota, nissan</p>
+                        </figcaption>
+                    </figure>
+                    <%= link_to url_to_image("freno.jpg"),:title=>"Tacos de freno", :style=>"width 90%;",:class => 'group1' do %>
+                        <i class="fa fa-search"></i>
+                    <% end %>
+                </div>
+
+                <div class="col-md-3 single-portfolio col-sm-6">
+                    <figure class="portfolio-item">
+                        <%= image_tag "filtro.jpg",:style => "",:class=>"img-responsive" %>
+                        <figcaption class="portfolio-details">
+                            <h4>Filtros</h4>
+                            <p>Kygo la mejor marca para sus vehiculos: hyndai, toyota, nissan</p>
+                        </figcaption>
+                    </figure>
+                    <%= link_to url_to_image("filtro.jpg"), :title=>"Filtros",:style=>"width 90%;",:class => 'group1' do %>
+                        <i class="fa fa-search"></i>
+                    <% end %>
+                </div>
+
+                <div class="col-md-3 single-portfolio col-sm-6">
+                    <figure class="portfolio-item">
+                        <%= image_tag "piston.jpg",:style => "",:class=>"img-responsive" %>
+                        <figcaption class="portfolio-details">
+                            <h4>Motores</h4>
+                            <p>Kygo la mejor marca para sus vehiculos: hyndai, toyota, nissan</p>
+                        </figcaption>
+                    </figure>
+                    <%= link_to url_to_image("piston.jpg"),:title=>"Pistones", :style=>"width 90%;",:class => 'group1' do %>
+                        <i class="fa fa-search"></i>
+                    <% end %>
+                </div>
+
+                <div class="col-md-3 single-portfolio col-sm-6">
+                    <figure class="portfolio-item">
+                        <%= image_tag "portfolio3.jpg",:style => "",:class=>"img-responsive" %>
+                        <figcaption class="portfolio-details">
+                            <h4>Baterias</h4>
+                            <p>Kygo la mejor marca para sus vehiculos: hyndai, toyota, nissan</p>
+                        </figcaption>
+                    </figure>
+                    <%= link_to url_to_image("portfolio3.jpg"), :title=>"Baterias",:style=>"width 90%;",:class => 'group1' do %>
+                        <i class="fa fa-search"></i>
+                    <% end %>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- about section ends -->
+        </section><!-- end of portfolio section -->
+    </div>
 
-    <!-- portfolio section -->
+    <div class="section">
+        <div class="slide">
+            <section class="about text-center" id="sec2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 about-heading">
+                        <h2>
+                            Acerca 
+                        </h2>
+                        <%= image_tag "daag.png",:style => "",:class=>"" %>
 
-    <section class="portfolio text-center" id="sec4">
-        <div class="row portfolio-row">
-            <div class="portfolio-heading">
-                <h2>PRODUCTOS</h2>
-                <%= image_tag "daag.png",:style => "",:class=>"img-responsive",:style=>"display:initial;" %>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                    <br>
-                    <br> ut labore et dolore magna aliqua.</p>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <%= image_tag "portfolio.jpg",:style => "",:class=>"img-responsive" %>
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="portfolio1.jpg"><i class="fa fa-search"></i></a>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <%= image_tag "portfolio2.jpg",:style => "",:class=>"img-responsive"  %>
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="imgages/portfolio2.jpg"><i class="fa fa-search"></i></a>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <%= image_tag "portfolio3.jpg",:style => "",:class=>"img-responsive" %>
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="img/portfolio3.jpg"><i class="fa fa-search"></i></a>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <%= image_tag "portfolio4.jpg",:style => "",:class=>"img-responsive" %>
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="img/portfolio4.jpg"><i class="fa fa-search"></i></a>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <%= image_tag "portfolio5.jpg",:style => "",:class=>"img-responsive" %>
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="img/portfolio5.jpg"><i class="fa fa-search"></i></a>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <%= image_tag "portfolio6.jpg",:style => "",:class=>"img-responsive" %>
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="img/portfolio6.jpg"><i class="fa fa-search"></i></a>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <%= image_tag "portfolio7.jpg",:style => "",:class=>"img-responsive" %>
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="img/portfolio7.jpg"><i class="fa fa-search"></i></a>
-            </div>
-
-            <div class="col-md-3 single-portfolio col-sm-6">
-                <figure class="portfolio-item">
-                    <%= image_tag "portfolio8.jpg",:style => "",:class=>"img-responsive" %>
-                    <figcaption class="portfolio-details">
-                        <h4>Title goes here</h4>
-                        <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
-                    </figcaption>
-                </figure>
-                <a href="images/portfolio8.jpg"><i class="fa fa-search"></i></a>
-            </div>
-        </div>
-    </section>
-    <!-- end of portfolio section -->
-
-    <section class="contact text-center" id="sec5">
-        <div class="container">
-            <div class="row">
-                <article class="contact-heading">
-                    <h2>CONTACTO</h2>
-                    <%= image_tag "daag.png",:style => "",:class=>"" %>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                        <br> ut labore et dolore magna aliqua.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-    <!-- end of contact section -->
-
-    <section class="contact-form">
-        <div class="container">
-            <div class="row">
-                <div class="form">
-                    <form action="contact.php">
-                        <div class="sbtn col-md-12 text-center">
-                            <input class="name form-input" type="text" placeholder="NAME">
-                            <input class="email form-input" type="email" placeholder="EMAIL">
-                            <input class="message form-input" type="text" placeholder="MASSAGE">
-                            <input class="submit-btn" type="submit">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span>quis nostrud exercitation ullamco</span> laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
                         </div>
-                    </form>
+
+                        <div class="col-md-3 single-about col-xs-6 col-sm-4">
+                            <div class="about-inside">
+                                <i class="fa fa-lightbulb-o"></i>
+                                <h3><header></header></h3>
+                                <p>onsectetur adipisicaing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 single-about col-xs-6 col-sm-4">
+                            <div class="about-inside">
+                                <i class="fa fa-pencil"></i>
+                                <h3>Title goes here</h3>
+                                <p>onsectetur adipisicaing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 single-about col-xs-6 col-sm-4">
+                            <div class="about-inside">
+                                <i class="fa fa-cog"></i>
+                                <h3>Title goes here</h3>
+                                <p>onsectetur adipisicaing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 single-about col-xs-6 col-sm-4">
+                            <div class="about-inside">
+                                <i class="fa fa-laptop"></i>
+                                <h3>Title goes here</h3>
+                                <p>onsectetur adipisicaing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.</p>
+                            </div>
+                        </div>
+                    </div><!--row -->
+                </div><!--container -->
+            </section>
+        </div>
+        <div class="slide">
+        </div>
+        <div class="slide">
+            <section class="service text-left" id="sec3">
+                <div class="container">
+                    <div class="row">
+                        <div class="service-overlay"></div>
+                        <div class="col-md-12">
+                        <h2>Servicios</h2>
+                        <%= image_tag "daag.png",:style => "",:class=>"" %>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            <br>
+                            <br> tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="col-md-12 services">
+                            <div class="col-md-2 single-service col-xs-6 col-sm-3">
+                                <i class="fa fa-tachometer"></i>
+                                <h3>Title goes here</h3>
+                                <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                            </div>
+
+                            <div class="col-md-2 col-md-push-1 single-service col-xs-6 col-sm-3">
+                                <i class="fa fa-search"></i>
+                                <h3>Title goes here</h3>
+                                <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12  services bottom-services">
+
+                            <div class="col-md-2 single-service col-sm-3 col-xs-6">
+                                <i class="fa fa-stack-overflow"></i>
+                                <h3>Title goes here</h3>
+                                <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                            </div>
+
+                            <div class="col-md-2 col-md-push-1 single-service col-sm-3 col-xs-6">
+                                <i class="fa fa-bar-chart"></i>
+                                <h3>Title goes here</h3>
+                                <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidiet dolorerserss eerhfre mag.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="section">
+        <section class="contact text-center" id="sec5">
+            <div class="container">
+                <div class="row">
+                    <article class="contact-heading">
+                        <h2>CONTACTO</h2>
+                        <%= image_tag "daag.png",:style => "",:class=>"" %>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            <br> ut labore et dolore magna aliqua.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section><!-- end of contact section -->
 
-    <!-- footer starts here -->
-    <footer class="footer text-center">
-        <p>Copyright: &copy; <a href="http://mostafiz.me">mostafiz</a> | All rights reserved</p>
-    </footer>
+        <section class="contact-form">
+            <div class="container">
+                <div class="row">
+                    <div class="form">
+                        <form action="contact.php">
+                            <div class="sbtn col-md-12 text-center">
+                                <input class="name form-input" type="text" placeholder="NAME">
+                                <input class="email form-input" type="email" placeholder="EMAIL">
+                                <input class="message form-input" type="text" placeholder="MASSAGE">
+                                <input class="submit-btn" type="submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    </div>         
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage', '3rdPage'],
+                sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['First page', 'Second page', 'Third and last page']
+            });
+        });
+    </script>
+    <script>
+            $(document).ready(function(){
+                //Examples of how to assign the Colorbox event to elements
+                $(".group1").colorbox({rel:'group1', width:'80%'});
+                //Example of preserving a JavaScript event for inline calls.
+                $("#click").click(function(){ 
+                    $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+                    return false;
+                });
+            });
+    </script>
 </body>
 
 </html>
